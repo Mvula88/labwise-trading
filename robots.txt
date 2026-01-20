@@ -1,0 +1,17 @@
+# Robots.txt for Labwise Trading cc
+# https://www.labwise-trading.com
+
+# Allow all search engines to crawl the entire site
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.labwise-trading.com/sitemap.xml
+
+# Crawl-delay (optional - be gentle on server)
+Crawl-delay: 10
+
+# Block common unnecessary paths (if they exist in future)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.pdf$
