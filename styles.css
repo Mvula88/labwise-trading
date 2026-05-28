@@ -1786,16 +1786,29 @@ input.error, textarea.error, select.error {
 }
 .product-price-value {
     font-family: var(--serif);
+    font-style: italic;
     font-weight: 500;
-    font-size: 1.25rem;
-    color: var(--ink);
+    font-size: 1.0625rem;
+    color: var(--cat);
     line-height: 1;
-    letter-spacing: -0.01em;
+    letter-spacing: 0;
 }
 .product-price-unit {
-    font-size: 11.5px;
+    font-size: 11px;
     color: var(--muted);
     font-weight: 500;
+    line-height: 1.4;
+}
+.quote-line-por {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--cat);
+    letter-spacing: 0;
+    padding: 3px 8px;
+    background: color-mix(in srgb, var(--cat) 8%, var(--paper));
+    border-radius: var(--radius-sm);
 }
 .product-add {
     display: inline-flex;

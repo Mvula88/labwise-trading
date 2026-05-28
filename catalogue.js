@@ -81,9 +81,6 @@
     const escapeHtml = s => String(s).replace(/[&<>"']/g, m => ({
         '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
     }[m]));
-    const fmtMoney = n => 'N$ ' + n.toLocaleString('en-NA', {
-        minimumFractionDigits: 2, maximumFractionDigits: 2
-    });
 
     /* --------------------------------------------------------------------
        Cart persistence
@@ -223,8 +220,6 @@
         switch (state.sort) {
             case 'name-asc':   list.sort((a, b) => a.name.localeCompare(b.name));  break;
             case 'name-desc':  list.sort((a, b) => b.name.localeCompare(a.name));  break;
-            case 'price-asc':  list.sort((a, b) => a.unitPrice - b.unitPrice);     break;
-            case 'price-desc': list.sort((a, b) => b.unitPrice - a.unitPrice);     break;
             case 'category':   list.sort((a, b) => a.category.localeCompare(b.category) || a.name.localeCompare(b.name)); break;
         }
         return list;
@@ -288,8 +283,8 @@
                     ${p.spec ? `<div class="product-spec"><strong>Spec</strong>${escapeHtml(p.spec)}</div>` : ''}
                     <div class="product-foot">
                         <div class="product-price">
-                            <span class="product-price-value">${fmtMoney(p.unitPrice)}</span>
-                            <span class="product-price-unit">per ${escapeHtml(p.unit)}</span>
+                            <span class="product-price-value">P.O.R</span>
+                            <span class="product-price-unit">Price on request · per ${escapeHtml(p.unit)}</span>
                         </div>
                         <button class="product-add${inCart ? ' added' : ''}" data-sku="${escapeHtml(p.sku)}" aria-label="Add ${escapeHtml(p.name)} to quote">
                             ${inCart ? 'Added' : `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg> Add to quote`}
@@ -344,13 +339,11 @@
     function renderCart () {
         const items = [...state.cart.values()];
         const count = items.reduce((a, b) => a + b.qty, 0);
-        const money = items.reduce((a, b) => a + b.qty * b.product.unitPrice, 0);
 
         fabCount.textContent = count;
         fab.hidden = count === 0 && !drawer.classList.contains('open');
         subcount.textContent = count === 1 ? '1 item' : `${count} items`;
         totalItems.textContent = count;
-        totalMoney.textContent = fmtMoney(money);
         btnSend.disabled = count === 0;
         btnSend.style.opacity = count === 0 ? '0.45' : '';
         btnSend.style.pointerEvents = count === 0 ? 'none' : '';
@@ -381,7 +374,7 @@
                         </div>
                     </div>
                     <div class="quote-line-price">
-                        <span class="quote-line-money">${fmtMoney(product.unitPrice * qty)}</span>
+                        <span class="quote-line-por">P.O.R</span>
                         <button type="button" class="quote-line-remove" data-act="remove">Remove</button>
                     </div>
                 </div>
@@ -437,25 +430,22 @@
         if (!items.length) return;
 
         const lines = items.map(({ product, qty }) => {
-            const total = product.unitPrice * qty;
-            return `• ${product.name}\n  SKU: ${product.sku}  ·  ${qty} × ${product.unit} @ ${fmtMoney(product.unitPrice)}  =  ${fmtMoney(total)}`;
+            return `• ${product.name}\n  SKU: ${product.sku}  ·  Qty: ${qty} ${product.unit}${qty > 1 ? 's' : ''}  ·  ${product.category}`;
         });
 
         const totalCount = items.reduce((a, b) => a + b.qty, 0);
-        const totalMoneyN = items.reduce((a, b) => a + b.qty * b.product.unitPrice, 0);
 
         const body = `Hello Labwise,
 
-I'd like a formal quotation for the following items from your catalogue:
+Please send me a formal quotation for the following items from your catalogue:
 
 ${lines.join('\n\n')}
 
 ────────────────────────────────────────
 Total items: ${totalCount}
-Indicative total (ex. VAT, ex. delivery): ${fmtMoney(totalMoneyN)}
 ────────────────────────────────────────
 
-Please confirm availability, final pricing and lead time.
+Please confirm pricing, availability and lead time.
 
 Delivery to: [please fill in]
 Required by: [optional]
