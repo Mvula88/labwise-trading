@@ -42,3 +42,8 @@ yarn-error.log*
 
 # Stray/cached image files (delete from disk if not needed)
 H3969039e7dca45d39854cd5e2b66f7b67.avif
+
+# Private pricing data — keep locally, never push to public repo
+data/products-internal.json
+data/products-internal.js
+.commit-msg.tmp

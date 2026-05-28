@@ -1,8 +1,7 @@
 // ============================================================================
-// Labwise — product catalogue data
-// This file is loaded directly by catalogue.html so the page works even when
-// opened from the filesystem (file://) where fetch() of JSON is blocked.
-// Keep this file in sync with data/products.json — they are the same content.
+// Labwise - product catalogue data (public version, no pricing)
+// Prices are confirmed via formal quotation. The internal version with unit
+// prices lives in data/products-internal.json and is gitignored.
 // ============================================================================
 
 window.LABWISE_PRODUCTS = {
@@ -36,7 +35,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Disposable plastic syringes for laboratory dispensing and measurement. Suitable for school biology and chemistry practicals.",
       "spec": "5 cm³ capacity",
       "unit": "each",
-      "unitPrice": 3.0,
       "imageUrl": "/images/products/lab-bio-001-syringes.jpg",
       "tags": [
         "syringe",
@@ -55,7 +53,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Flexible plastic dropper pipette ideal for precise liquid transfer in classroom experiments. Disposable, hygienic, easy to use.",
       "spec": "Plastic, ~5 ml capacity, ~15 cm long",
       "unit": "each",
-      "unitPrice": 3.0,
       "imageUrl": "/images/products/lab-bio-002-dropper-pipette.jpg",
       "tags": [
         "pipette",
@@ -74,7 +71,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Heat-resistant borosilicate glass beaker for general chemistry use. Graduated for approximate volume measurement.",
       "spec": "100 cm³, borosilicate glass, heat resistant",
       "unit": "each",
-      "unitPrice": 40.0,
       "imageUrl": "/images/products/lab-gla-001-beaker-100ml.jpg",
       "tags": [
         "beaker",
@@ -93,7 +89,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Small 50 ml glass beaker for low-volume reactions, measurements and dispensing.",
       "spec": "50 ml capacity glass",
       "unit": "each",
-      "unitPrice": 34.0,
       "imageUrl": "/images/products/lab-gla-002-beaker-50ml.jpg",
       "tags": [
         "beaker",
@@ -111,7 +106,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Standard 250 ml glass beaker for routine laboratory mixing, heating and measuring.",
       "spec": "250 ml capacity",
       "unit": "each",
-      "unitPrice": 56.0,
       "imageUrl": "/images/products/lab-gla-003-beaker-250ml.jpg",
       "tags": [
         "beaker",
@@ -128,7 +122,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Stainless steel blunt-tip forceps for safe specimen handling in biology dissections. Corrosion resistant, autoclavable.",
       "spec": "Stainless steel, 125 mm long, blunt point",
       "unit": "each",
-      "unitPrice": 24.21,
       "imageUrl": "/images/products/lab-bio-003-blunt-forceps.jpg",
       "tags": [
         "forceps",
@@ -145,7 +138,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Stainless steel surgical scalpel handle No.3 — compatible with No.10–15 scalpel blades. For dissection in biology labs.",
       "spec": "Stainless steel No.3",
       "unit": "each",
-      "unitPrice": 63.0,
       "imageUrl": "/images/products/lab-bio-004-scalpel-handle.jpg",
       "tags": [
         "scalpel",
@@ -163,7 +155,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Sharp stainless steel scalpel blade No.3, fits standard scalpel handles. Disposable, sterile.",
       "spec": "Stainless steel No.3",
       "unit": "each",
-      "unitPrice": 5.0,
       "imageUrl": "/images/products/lab-bio-005-scalpel-blade.jpg",
       "tags": [
         "scalpel",
@@ -181,7 +172,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Plain glass stirring rod for chemistry experiments. Smooth ends, chemically inert.",
       "spec": "300 mm × 7 mm",
       "unit": "each",
-      "unitPrice": 23.0,
       "imageUrl": "/images/products/lab-gla-004-glass-rod.jpg",
       "tags": [
         "glass-rod",
@@ -198,7 +188,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Sanji 1100 sport stopwatch with 0.1-second precision. Suitable for biology and physics timing experiments.",
       "spec": "Sanji 1100 Stopwatch, reading to 0.1 s or better",
       "unit": "each",
-      "unitPrice": 100.0,
       "imageUrl": "/images/products/lab-bio-006-stopwatch.jpg",
       "tags": [
         "stopwatch",
@@ -216,7 +205,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Standard safety goggles for full eye protection against splashes and fumes. CE-certified for school laboratory use.",
       "spec": "Standard safety goggle (NOT safety spectacles)",
       "unit": "each",
-      "unitPrice": 30.0,
       "imageUrl": "/images/products/lab-bio-007-safety-goggles.jpg",
       "tags": [
         "goggles",
@@ -233,7 +221,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Borosilicate heat-resistant test tube, 24 mm × 150 mm. Suitable for heating reactions over Bunsen burners.",
       "spec": "24 mm × 150 mm, heat-resistant",
       "unit": "each",
-      "unitPrice": 9.0,
       "imageUrl": "/images/products/lab-gla-005-test-tube-large.jpg",
       "tags": [
         "test-tube",
@@ -251,7 +238,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Standard glass test tube for routine school chemistry reactions and observations.",
       "spec": "Standard test tube",
       "unit": "each",
-      "unitPrice": 10.0,
       "imageUrl": "/images/products/lab-gla-006-test-tube-standard.jpg",
       "tags": [
         "test-tube",
@@ -268,7 +254,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Thick-walled hard-glass test tube, heat-resistant for prolonged Bunsen burner exposure.",
       "spec": "Standard heat-resistant test tube (hard glass)",
       "unit": "each",
-      "unitPrice": 10.0,
       "imageUrl": "/images/products/lab-gla-007-hard-glass-test-tube.jpg",
       "tags": [
         "test-tube",
@@ -284,7 +269,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Large heat-resistant boiling tube, ideal for vigorous reactions, distillation and prolonged heating.",
       "spec": "Standard heat-resistant tube",
       "unit": "each",
-      "unitPrice": 10.0,
       "imageUrl": "/images/products/lab-gla-008-boiling-tube.jpg",
       "tags": [
         "boiling-tube",
@@ -300,7 +284,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Standard test tube cleaning brush with soft bristles and twisted wire handle. For glassware washing.",
       "spec": "Standard",
       "unit": "each",
-      "unitPrice": 32.0,
       "imageUrl": "/images/products/lab-bio-008-test-tube-brush.jpg",
       "tags": [
         "brush",
@@ -317,7 +300,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Wooden test tube rack holding 7 test tubes. Stable, lightweight, easy to clean.",
       "spec": "Wooden, holding 7 test tubes",
       "unit": "each",
-      "unitPrice": 184.0,
       "imageUrl": "/images/products/lab-bio-009-test-tube-rack.jpg",
       "tags": [
         "rack",
@@ -334,7 +316,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Portable LPG Bunsen burner with metallic casing and refillable gas cartridge. Includes safety clamps. Ideal for classroom heating experiments.",
       "spec": "Metallic casing, with refill gas canister/cartridge and metal clamps for fastening",
       "unit": "each",
-      "unitPrice": 375.0,
       "imageUrl": "/images/products/lab-bio-010-bunsen-burner.jpg",
       "tags": [
         "bunsen-burner",
@@ -352,7 +333,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Standard steel tripod stand for supporting beakers and flasks over a Bunsen burner. Powder-coated finish.",
       "spec": "Standard steel tripod stand, 205 mm height",
       "unit": "each",
-      "unitPrice": 52.0,
       "imageUrl": "/images/products/lab-bio-011-tripod.jpg",
       "tags": [
         "tripod",
@@ -370,7 +350,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Replacement LPG gas cartridge for portable Bunsen burners. Standard fitting.",
       "spec": "For fitting/refilling Bunsen burner",
       "unit": "each",
-      "unitPrice": 99.0,
       "imageUrl": "/images/products/lab-bio-012-gas-cartridge.jpg",
       "tags": [
         "gas",
@@ -387,7 +366,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Wire gauze mat with ceramic centre, 150 mm × 150 mm. Distributes heat evenly under glassware on a tripod.",
       "spec": "150 mm × 150 mm",
       "unit": "each",
-      "unitPrice": 40.0,
       "imageUrl": "/images/products/lab-bio-013-gauze-wire.jpg",
       "tags": [
         "gauze",
@@ -404,7 +382,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Mercury-in-glass thermometer with red alcohol or mercury fill, range 0 °C to 100 °C. For routine temperature measurement.",
       "spec": "Mercury-in-glass, reading from 0 °C to 100 °C",
       "unit": "each",
-      "unitPrice": 66.0,
       "imageUrl": "/images/products/lab-bio-014-thermometer.jpg",
       "tags": [
         "thermometer",
@@ -421,7 +398,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Pre-prepared microscope slide showing transverse section of a dicotyledonous root. Permanently mounted, ready to view.",
       "spec": "Transverse section of a dicotyledonous root",
       "unit": "each",
-      "unitPrice": 29.0,
       "imageUrl": "/images/products/lab-bio-015-microscope-slide.jpg",
       "tags": [
         "slide",
@@ -440,7 +416,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Standard monocular cordless LED microscope with ×10/×40 objectives, mechanical stage and rechargeable battery. Suitable for senior secondary biology.",
       "spec": "Standard monocular cordless LED, with rechargeable batteries, eyepiece lens ×10, low-power objective ×10, high-power objective ×40, 240V charger and mechanical stage",
       "unit": "each",
-      "unitPrice": 1882.0,
       "imageUrl": "/images/products/lab-bio-016-light-microscope.jpg",
       "tags": [
         "microscope",
@@ -459,7 +434,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Standardised hydrochloric acid (HCl) solution at 1.0 mol/dm³ concentration. Laboratory-grade for titrations and reactions.",
       "spec": "1.0 mol/dm³ HCl aqueous solution",
       "unit": "ml",
-      "unitPrice": 0.13,
       "imageUrl": "/images/products/lab-chm-001-hcl-1m.jpg",
       "tags": [
         "hcl",
@@ -477,7 +451,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Standardised hydrochloric acid (HCl) solution at 2.0 mol/dm³. Suitable for advanced reactions and titrations.",
       "spec": "2.0 mol/dm³ concentration HCl solution",
       "unit": "litre",
-      "unitPrice": 431.04,
       "imageUrl": "/images/products/lab-chm-002-hcl-2m.jpg",
       "tags": [
         "hcl",
@@ -494,7 +467,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Standardised sodium hydroxide (NaOH) solution at 0.100 mol/dm³. For titrations against weak/strong acids.",
       "spec": "0.100 mol/dm³ NaOH solution",
       "unit": "litre",
-      "unitPrice": 256.85,
       "imageUrl": "/images/products/lab-chm-003-naoh-01m.jpg",
       "tags": [
         "naoh",
@@ -512,7 +484,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Sodium hydroxide (NaOH) aqueous solution at 1.0 mol/dm³. Caustic — handle with appropriate PPE.",
       "spec": "1.0 mol/dm³ NaOH aqueous solution",
       "unit": "litre",
-      "unitPrice": 244.41,
       "imageUrl": "/images/products/lab-chm-004-naoh-1m.jpg",
       "tags": [
         "naoh",
@@ -530,7 +501,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Nitric acid (HNO₃) solution at 2.0 mol/dm³ concentration. Strong oxidising acid for chemistry experiments.",
       "spec": "2.0 mol/dm³ HNO₃ concentration solution",
       "unit": "litre",
-      "unitPrice": 425.39,
       "imageUrl": "/images/products/lab-chm-005-hno3-2m.jpg",
       "tags": [
         "hno3",
@@ -547,7 +517,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Aqueous ammonia (NH₃) solution at 2.0 mol/dm³. Pungent — use in fume hood. For complex-ion experiments.",
       "spec": "2.0 mol/dm³ aqueous ammonia (NH₃) solution",
       "unit": "litre",
-      "unitPrice": 300.0,
       "imageUrl": "/images/products/lab-chm-006-ammonia-2m.jpg",
       "tags": [
         "ammonia",
@@ -564,7 +533,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Barium nitrate (Ba(NO₃)₂) aqueous solution at 0.100 mol/dm³. For sulfate ion detection tests.",
       "spec": "0.100 mol/dm³ Ba(NO₃)₂ aqueous solution",
       "unit": "litre",
-      "unitPrice": 747.71,
       "imageUrl": "/images/products/lab-chm-007-barium-nitrate.jpg",
       "tags": [
         "barium-nitrate",
@@ -581,7 +549,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Saturated aqueous calcium hydroxide (Ca(OH)₂). Used to test for carbon dioxide (turns milky).",
       "spec": "Saturated aqueous calcium hydroxide (Ca(OH)₂)",
       "unit": "litre",
-      "unitPrice": 148.04,
       "imageUrl": "/images/products/lab-chm-008-lime-water.jpg",
       "tags": [
         "lime-water",
@@ -597,7 +564,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Silver nitrate (AgNO₃) aqueous solution at 0.05 mol/dm³. For halide ion detection tests. Light-sensitive.",
       "spec": "0.05 mol/dm³ AgNO₃ aqueous solution",
       "unit": "litre",
-      "unitPrice": 2388.4,
       "imageUrl": "/images/products/lab-chm-009-silver-nitrate.jpg",
       "tags": [
         "silver-nitrate",
@@ -614,7 +580,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Phenolphthalein indicator solution — pink in alkali, colourless in acid. Common acid-base titration indicator.",
       "spec": "Phenolphthalein indicator solution (pH indicator)",
       "unit": "ml",
-      "unitPrice": 1.14,
       "imageUrl": "/images/products/lab-chm-010-phenolphthalein.jpg",
       "tags": [
         "phenolphthalein",
@@ -631,7 +596,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Bromothymol blue indicator solution — yellow at pH < 6, blue at pH > 7.6. For pH visualisation experiments.",
       "spec": "Bromothymol blue indicator solution",
       "unit": "litre",
-      "unitPrice": 593.23,
       "imageUrl": "/images/products/lab-chm-011-bromothymol-blue.jpg",
       "tags": [
         "bromothymol-blue",
@@ -647,7 +611,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Pure calcium carbonate (CaCO₃) — solid chips and powder. For reaction-rate and stoichiometry experiments.",
       "spec": "Solid and powder CaCO₃",
       "unit": "g",
-      "unitPrice": 0.75,
       "imageUrl": "/images/products/lab-chm-012-calcium-carbonate.jpg",
       "tags": [
         "calcium-carbonate",
@@ -664,7 +627,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Hydrated aluminium sulfate Al₂(SO₄)₃·xH₂O. Used in flocculation and ion-precipitation experiments.",
       "spec": "Hydrated solid Al₂(SO₄)₃·xH₂O",
       "unit": "g",
-      "unitPrice": 1.2,
       "imageUrl": "/images/products/lab-chm-013-aluminium-sulfate.jpg",
       "tags": [
         "aluminium-sulfate",
@@ -680,7 +642,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Anhydrous sodium carbonate (Na₂CO₃, soda ash). Primary standard for acid titrations.",
       "spec": "Anhydrous Na₂CO₃",
       "unit": "g",
-      "unitPrice": 0.57,
       "imageUrl": "/images/products/lab-chm-014-sodium-carbonate.jpg",
       "tags": [
         "sodium-carbonate",
@@ -697,7 +658,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Food-grade dessert gelatine sheets/leaves, 25 g packs. Used in osmosis and diffusion experiments.",
       "spec": "25 g dessert gelatine sheets/leaves (food-grade)",
       "unit": "g",
-      "unitPrice": 6.82,
       "imageUrl": "/images/products/lab-chm-015-gelatine.jpg",
       "tags": [
         "gelatine",
@@ -714,7 +674,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Standard laboratory-grade distilled water. For dilutions, solutions and rinsing glassware.",
       "spec": "Standard distilled water",
       "unit": "litre",
-      "unitPrice": 39.29,
       "imageUrl": "/images/products/lab-chm-016-distilled-water.jpg",
       "tags": [
         "distilled-water",
@@ -730,7 +689,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Red litmus paper booklet (100+ leaves). Turns blue in alkaline solutions.",
       "spec": "Standard booklets of at least 100 leaves",
       "unit": "booklet",
-      "unitPrice": 50.0,
       "imageUrl": "/images/products/lab-ind-001-red-litmus.jpg",
       "tags": [
         "litmus",
@@ -747,7 +705,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Blue litmus paper booklet (100+ leaves). Turns red in acidic solutions.",
       "spec": "Standard booklets of at least 100 leaves",
       "unit": "booklet",
-      "unitPrice": 50.0,
       "imageUrl": "/images/products/lab-ind-002-blue-litmus.jpg",
       "tags": [
         "litmus",
@@ -764,7 +721,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Universal indicator paper booklet (100+ leaves). Full-range pH 1-14 colour scale included.",
       "spec": "Standard booklets of at least 100 leaves",
       "unit": "booklet",
-      "unitPrice": 80.0,
       "imageUrl": "/images/products/lab-ind-003-universal-indicator.jpg",
       "tags": [
         "universal-indicator",
@@ -780,7 +736,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Standard laboratory filter paper, 100 papers per pack. For gravimetric filtration and qualitative separations.",
       "spec": "Standard package with 100 filter papers",
       "unit": "pack",
-      "unitPrice": 147.0,
       "imageUrl": "/images/products/lab-ind-004-filter-paper.jpg",
       "tags": [
         "filter-paper",
@@ -796,7 +751,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Standard wooden splints for hydrogen and carbon dioxide testing (pop test, glowing splint).",
       "spec": "Standard wooden splints",
       "unit": "each",
-      "unitPrice": 0.56,
       "imageUrl": "/images/products/lab-chm-017-wooden-splint.jpg",
       "tags": [
         "wooden-splint",
@@ -813,7 +767,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Glass graduated pipette, 25 cm³. For precise volume transfer in titrations and dilutions.",
       "spec": "Glass graduated pipettes of 25 cm³",
       "unit": "each",
-      "unitPrice": 83.0,
       "imageUrl": "/images/products/lab-gla-009-pipette.jpg",
       "tags": [
         "pipette",
@@ -830,7 +783,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Standard 3-valve rubber pipette filler bulb. Safe alternative to mouth pipetting.",
       "spec": "Standard rubber 3-valve pipette filler",
       "unit": "each",
-      "unitPrice": 80.0,
       "imageUrl": "/images/products/lab-gla-010-pipette-filler.jpg",
       "tags": [
         "pipette-filler",
@@ -847,7 +799,6 @@ window.LABWISE_PRODUCTS = {
       "description": "50 cm³ glass burette with stopcock for precise titrant delivery. Class A graduations.",
       "spec": "50 cm³ capacity burette",
       "unit": "each",
-      "unitPrice": 400.0,
       "imageUrl": "/images/products/lab-gla-011-burette.jpg",
       "tags": [
         "burette",
@@ -864,7 +815,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Retort stand with heavy cast iron base — does not require G-clamping. Stable for titrations and apparatus support.",
       "spec": "With heavy cast iron base (does not need G clamping)",
       "unit": "each",
-      "unitPrice": 287.54,
       "imageUrl": "/images/products/lab-chm-eqp-001-retort-stand.jpg",
       "tags": [
         "retort-stand",
@@ -881,7 +831,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Metallic burette clamp that accommodates two burettes simultaneously. Cork-lined grips protect glassware.",
       "spec": "Metallic, accommodates two burettes",
       "unit": "each",
-      "unitPrice": 348.0,
       "imageUrl": "/images/products/lab-chm-eqp-002-burette-clamp.jpg",
       "tags": [
         "burette-clamp",
@@ -898,7 +847,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Standard plastic laboratory funnel for liquid transfer and filtration. Chemically resistant.",
       "spec": "Plastic, standard",
       "unit": "each",
-      "unitPrice": 16.0,
       "imageUrl": "/images/products/lab-gla-012-funnel.jpg",
       "tags": [
         "funnel",
@@ -914,7 +862,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Class A 250 cm³ volumetric flask with ground-glass stopper. For accurate solution preparation.",
       "spec": "250 cm³ capacity volumetric flask with stopper",
       "unit": "each",
-      "unitPrice": 140.0,
       "imageUrl": "/images/products/lab-gla-013-volumetric-flask.jpg",
       "tags": [
         "volumetric-flask",
@@ -931,7 +878,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Graduated 250 cm³ Erlenmeyer (conical) flask. Wide base, narrow neck for swirling without spillage.",
       "spec": "Graduated, 250 cm³ capacity",
       "unit": "each",
-      "unitPrice": 88.0,
       "imageUrl": "/images/products/lab-gla-014-conical-flask.jpg",
       "tags": [
         "conical-flask",
@@ -948,7 +894,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Glass measuring cylinder, 50 cm³ capacity. Suitable for routine volume measurement in school labs.",
       "spec": "50 cm³ capacity measuring cylinder",
       "unit": "each",
-      "unitPrice": 70.0,
       "imageUrl": "/images/products/lab-gla-015-measuring-cylinder.jpg",
       "tags": [
         "measuring-cylinder",
@@ -964,7 +909,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Mechanical or digital stop clock with second display. For reaction-rate experiments.",
       "spec": "With second display",
       "unit": "each",
-      "unitPrice": 75.0,
       "imageUrl": "/images/products/lab-chm-eqp-003-stop-clock.jpg",
       "tags": [
         "stop-clock",
@@ -980,7 +924,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Electronic precision balance — 0.01 g accuracy, 200 g maximum capacity. Tare function, calibration weight included.",
       "spec": "Electronic balance, minimum accuracy 0.01 g, maximum 200 g",
       "unit": "each",
-      "unitPrice": 1318.0,
       "imageUrl": "/images/products/lab-chm-eqp-004-balance.jpg",
       "tags": [
         "balance",
@@ -998,7 +941,6 @@ window.LABWISE_PRODUCTS = {
       "description": "500 ml polyethylene wash bottle for distilled water dispensing. Bent delivery tube, screw cap.",
       "spec": "Standard 500 ml capacity wash bottle",
       "unit": "each",
-      "unitPrice": 65.0,
       "imageUrl": "/images/products/lab-gla-016-wash-bottle.jpg",
       "tags": [
         "wash-bottle",
@@ -1014,7 +956,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Standard chemistry spatula — double-ended, stainless steel. For solid sample handling.",
       "spec": "Standard chemistry spatula",
       "unit": "each",
-      "unitPrice": 71.0,
       "imageUrl": "/images/products/lab-gla-017-spatula.jpg",
       "tags": [
         "spatula",
@@ -1030,7 +971,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Standard plastic dropper pipette for chemistry labs. Disposable, accurate drop-by-drop dispensing.",
       "spec": "Standard and plastic dropper pipette",
       "unit": "each",
-      "unitPrice": 10.0,
       "imageUrl": "/images/products/lab-gla-018-dropper-pipette.jpg",
       "tags": [
         "dropper-pipette",
@@ -1046,7 +986,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Test tube holder with spring-loaded jaws and wooden handle. For holding hot test tubes safely.",
       "spec": "Test tube holder with wooden handle",
       "unit": "each",
-      "unitPrice": 51.0,
       "imageUrl": "/images/products/lab-gla-019-test-tube-holder.jpg",
       "tags": [
         "test-tube-holder",
@@ -1062,7 +1001,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Standard heat-proof bench mat. Protects lab benches from hot glassware and naked flames.",
       "spec": "Standard heat-proof bench mat",
       "unit": "each",
-      "unitPrice": 30.0,
       "imageUrl": "/images/products/lab-chm-eqp-005-heat-proof-mat.jpg",
       "tags": [
         "heat-proof-mat",
@@ -1078,7 +1016,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Reusable chemical storage bottles, 200 ml capacity. Screw cap, chemically inert.",
       "spec": "Able to accommodate 200 ml of solutions",
       "unit": "each",
-      "unitPrice": 40.0,
       "imageUrl": "/images/products/lab-gla-020-chemical-containers.jpg",
       "tags": [
         "bottle",
@@ -1095,7 +1032,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Plastic Petri dish, 80 mm diameter × 14 mm height. For specimen viewing and culture work.",
       "spec": "Plastic, approximately 14 mm height × 80 mm diameter",
       "unit": "each",
-      "unitPrice": 6.0,
       "imageUrl": "/images/products/lab-gla-021-petri-dish-80mm.jpg",
       "tags": [
         "petri-dish",
@@ -1111,7 +1047,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Small plastic Petri dish, 65 mm diameter × 14 mm height. For micro-scale observation.",
       "spec": "Plastic, approximately 14 mm height × 65 mm diameter",
       "unit": "each",
-      "unitPrice": 16.97,
       "imageUrl": "/images/products/lab-gla-022-petri-dish-65mm.jpg",
       "tags": [
         "petri-dish",
@@ -1127,7 +1062,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Tall 60 cm retort stand with heavy cast iron base. Suitable for physics experiments involving springs, pendulums and tall apparatus.",
       "spec": "With heavy cast iron base (does not need G clamping), 60 cm height",
       "unit": "each",
-      "unitPrice": 287.54,
       "imageUrl": "/images/products/lab-phy-001-retort-stand-60cm.jpg",
       "tags": [
         "retort-stand",
@@ -1144,7 +1078,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Standard universal laboratory clamp. Fits retort stand rods. Adjustable jaw width.",
       "spec": "Standard laboratory clamp",
       "unit": "each",
-      "unitPrice": 202.0,
       "imageUrl": "/images/products/lab-phy-002-clamp.jpg",
       "tags": [
         "clamp",
@@ -1161,7 +1094,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Metallic boss head connector — attaches clamps to retort stand rods at 90° or angled.",
       "spec": "Metallic boss head connector",
       "unit": "each",
-      "unitPrice": 105.0,
       "imageUrl": "/images/products/lab-phy-003-boss-head.jpg",
       "tags": [
         "boss-head",
@@ -1177,7 +1109,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Standard Newton meter (spring scale) for force measurement. Typical range 0-10 N or 0-20 N.",
       "spec": "Standard Newton meter (spring scale)",
       "unit": "each",
-      "unitPrice": 114.0,
       "imageUrl": "/images/products/lab-phy-004-newton-meter.jpg",
       "tags": [
         "newton-meter",
@@ -1193,7 +1124,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Triangular prism for light refraction and spectrum experiments. Available in glass or hard acrylic.",
       "spec": "Made out of hard material e.g. wood, glass",
       "unit": "each",
-      "unitPrice": 130.0,
       "imageUrl": "/images/products/lab-phy-005-triangular-prism.jpg",
       "tags": [
         "prism",
@@ -1211,7 +1141,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Calibrated 50 g slotted mass for mechanics experiments. Stackable on slotted mass hanger.",
       "spec": "50 g per piece (calibrated steel)",
       "unit": "each",
-      "unitPrice": 95.0,
       "imageUrl": "/images/products/lab-phy-006-slotted-mass.jpg",
       "tags": [
         "slotted-mass",
@@ -1228,7 +1157,6 @@ window.LABWISE_PRODUCTS = {
       "description": "1-metre wooden ruler calibrated in mm and cm. For length measurement in physics experiments.",
       "spec": "Wooden 1 m ruler, calibrated in mm and cm",
       "unit": "each",
-      "unitPrice": 12.0,
       "imageUrl": "/images/products/lab-phy-007-metre-ruler.jpg",
       "tags": [
         "metre-ruler",
@@ -1246,7 +1174,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Metal Vernier calliper with 0.1 mm reading precision (or better). Measures internal, external and depth dimensions.",
       "spec": "Reading 0.1 mm or better",
       "unit": "each",
-      "unitPrice": 599.62,
       "imageUrl": "/images/products/lab-phy-008-vernier-calliper.jpg",
       "tags": [
         "vernier-calliper",
@@ -1263,7 +1190,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Food-grade 5% spirit vinegar, supplied in 5L jugs. For school chemistry acid experiments and cleaning.",
       "spec": "5% food-grade spirit vinegar (5L jugs)",
       "unit": "litre",
-      "unitPrice": 38.0,
       "imageUrl": "/images/products/lab-con-001-vinegar.jpg",
       "tags": [
         "vinegar",
@@ -1280,7 +1206,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Standard household aluminium foil roll for general lab use, sample wrapping and insulation.",
       "spec": "Household foil roll",
       "unit": "metre",
-      "unitPrice": 4.2,
       "imageUrl": "/images/products/lab-con-002-foil.jpg",
       "tags": [
         "aluminium-foil",
@@ -1296,7 +1221,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Powder-free, latex-free nitrile examination gloves, size Medium. Box of 100. For chemistry and biology PPE.",
       "spec": "Powder-free, latex-free, box of 100",
       "unit": "box",
-      "unitPrice": 215.0,
       "imageUrl": "/images/products/lab-con-003-nitrile-gloves-m.jpg",
       "tags": [
         "gloves",
@@ -1314,7 +1238,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Powder-free, latex-free nitrile examination gloves, size Large. Box of 100. For chemistry and biology PPE.",
       "spec": "Powder-free, latex-free, box of 100",
       "unit": "box",
-      "unitPrice": 280.0,
       "imageUrl": "/images/products/lab-con-004-nitrile-gloves-l.jpg",
       "tags": [
         "gloves",
@@ -1332,7 +1255,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Absorbent cotton wool balls — multi-purpose for cleaning, sterilisation prep and biology experiments.",
       "spec": "Absorbent cotton wool balls",
       "unit": "each",
-      "unitPrice": 845.0,
       "imageUrl": "/images/products/lab-con-005-cotton-wool.jpg",
       "tags": [
         "cotton-wool",
@@ -1348,7 +1270,6 @@ window.LABWISE_PRODUCTS = {
       "description": "2-ply kitchen paper towel roll, minimum 50 sheets per roll. For lab bench cleaning and spill absorption.",
       "spec": "2-ply, minimum 50 sheets per roll",
       "unit": "roll",
-      "unitPrice": 18.0,
       "imageUrl": "/images/products/lab-con-006-paper-towel.jpg",
       "tags": [
         "paper-towel",
@@ -1365,7 +1286,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Disposable paper plates, 18 cm diameter. For specimen display in biology and home-economics labs.",
       "spec": "Disposable paper plates, 18 cm diameter",
       "unit": "each",
-      "unitPrice": 3.81,
       "imageUrl": "/images/products/lab-con-007-paper-plates-18cm.jpg",
       "tags": [
         "paper-plates",
@@ -1381,7 +1301,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Disposable paper plates, 23 cm diameter. Larger size for specimen display and food-science demonstrations.",
       "spec": "Disposable paper plates, 23 cm diameter",
       "unit": "each",
-      "unitPrice": 4.0,
       "imageUrl": "/images/products/lab-con-008-paper-plates-23cm.jpg",
       "tags": [
         "paper-plates",
@@ -1397,7 +1316,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Combined digital and linear IC tester for TVET and university electronics labs. Tests 74-series, CMOS, op-amps, comparators, ADC/DAC and voltage regulators.",
       "spec": "Microprocessor-based, 40-pin ZIF socket for digital ICs, 20-pin ZIF for linear/analog. 16×2 backlit LCD, auto-search. AC 220V, 50Hz.",
       "unit": "each",
-      "unitPrice": 9100.0,
       "imageUrl": "/images/products/lab-ele-001-ic-tester.jpg",
       "tags": [
         "ic-tester",
@@ -1416,7 +1334,6 @@ window.LABWISE_PRODUCTS = {
       "description": "2-in-1 SMD rework station: hot-air gun + temperature-controlled soldering iron. ESD safe. For PCB assembly and rework.",
       "spec": "Quick 957D+ or Atten ST-862D 2-in-1 SMD rework station: hot-air gun (100–450 °C, 24 L/min) + temperature-controlled soldering iron (200–480 °C). Digital LCD, sleep mode, 700W total.",
       "unit": "each",
-      "unitPrice": 2970.0,
       "imageUrl": "/images/products/lab-ele-002-soldering-station.jpg",
       "tags": [
         "soldering",
@@ -1434,7 +1351,6 @@ window.LABWISE_PRODUCTS = {
       "description": "RF spectrum analyser with tracking generator. For telecoms training, RF measurement and antenna characterisation.",
       "spec": "Rigol DSA815-TG (9 kHz – 1.5 GHz) with tracking generator, RBW 100 Hz – 1 MHz, DANL −135 dBm typical, 10.4″ colour display. 3-year warranty.",
       "unit": "each",
-      "unitPrice": 76000.0,
       "imageUrl": "/images/products/lab-ele-003-spectrum-analyser.jpg",
       "tags": [
         "spectrum-analyser",
@@ -1452,7 +1368,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Educational CNC PCB prototyping machine. Drilling, routing and isolation milling on FR4 blanks. Includes design software.",
       "spec": "Work area 200 × 300 mm, 60,000 rpm spindle, ±0.05 mm accuracy. Includes CAM software, starter bit set, FR4 blanks, manual.",
       "unit": "each",
-      "unitPrice": 140000.0,
       "imageUrl": "/images/products/lab-ele-004-pcb-machine.jpg",
       "tags": [
         "pcb",
@@ -1470,7 +1385,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Educational standard 200 MHz digital storage oscilloscope. 7″ TFT, 24 Mpts memory, FFT, serial decode (UART, I²C, SPI).",
       "spec": "Rigol DS1202Z-E or Siglent SDS1202X-E — 200 MHz, 2 channels, 1 GSa/s, 24 Mpts, 7″ TFT, USB/LAN/HDMI.",
       "unit": "each",
-      "unitPrice": 15525.0,
       "imageUrl": "/images/products/lab-ele-005-oscilloscope.jpg",
       "tags": [
         "oscilloscope",
@@ -1489,7 +1403,6 @@ window.LABWISE_PRODUCTS = {
       "description": "5.5-digit bench multimeter with hFE transistor test, temperature (PT100), USB and LAN. Industrial-grade laboratory standard.",
       "spec": "Siglent SDM3055 or Rigol DM3058E — 5.5-digit, dual display, true RMS, V to 750V AC/DC, I to 10A, R to 100MΩ, C, freq, diode, continuity, hFE, PT100.",
       "unit": "each",
-      "unitPrice": 10920.0,
       "imageUrl": "/images/products/lab-ele-006-multimeter.jpg",
       "tags": [
         "multimeter",
@@ -1507,7 +1420,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Dual-channel arbitrary/function waveform generator. Full modulation suite for telecoms and electronics teaching.",
       "spec": "Rigol DG992 Pro or Siglent SDG6022X — 200 MHz, 2 channels, 16-bit, sine/square/pulse/triangle/arbitrary; AM/FM/PM/PWM/FSK/ASK/PSK. USB/LAN, 7″ touchscreen.",
       "unit": "each",
-      "unitPrice": 32500.0,
       "imageUrl": "/images/products/lab-ele-007-signal-generator.jpg",
       "tags": [
         "signal-generator",
@@ -1526,7 +1438,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Triple-output programmable DC bench supply. 2 × variable channels + 1 fixed. Series/parallel modes, USB/LAN.",
       "spec": "Siglent SPD3303X-E — 2 × 0–32V/3.2A + 1 × 2.5V/3.3V/5V fixed. 0.1mV/0.1mA resolution, 4.3″ TFT, USB/LAN, OVP/OCP, CAT II.",
       "unit": "each",
-      "unitPrice": 10500.0,
       "imageUrl": "/images/products/lab-ele-008-dc-power-supply.jpg",
       "tags": [
         "dc-power-supply",
@@ -1544,7 +1455,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Variable AC autotransformer (variac) — 0–260V AC output, 2 kVA. For motor testing and AC experiments.",
       "spec": "220V AC input, 0–260V AC variable, 2 kVA / 8A. Analogue voltmeter, smooth rotation, brass commutator, fused output, metal enclosure, CE certified.",
       "unit": "each",
-      "unitPrice": 4480.0,
       "imageUrl": "/images/products/lab-ele-009-variac.jpg",
       "tags": [
         "variac",
@@ -1562,7 +1472,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Comprehensive antenna trainer — 22 different antenna types with PC-based radiation pattern plotting. For RF/communications training.",
       "spec": "Tesca/Naugra Advanced Antenna Trainer System — 2 tripods, 22 antennas (dipole, monopole, Yagi, helical, microstrip, horn, log-periodic, etc.), RF TX/RX, plotting software, cables, PC interface, manual.",
       "unit": "each",
-      "unitPrice": 75000.0,
       "imageUrl": "/images/products/lab-ele-010-antenna-trainer.jpg",
       "tags": [
         "antenna-trainer",
@@ -1581,7 +1490,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Fibre optic communication trainer — analog and digital signal transmission, single-mode and multi-mode fibre included.",
       "spec": "Tesca/Naugra — analog and digital transmission, LED & laser TX, photodiode RX, single-mode & multi-mode fibre spools, BNC patches, experiment manual.",
       "unit": "each",
-      "unitPrice": 32000.0,
       "imageUrl": "/images/products/lab-ele-011-fibre-optic.jpg",
       "tags": [
         "fibre-optic",
@@ -1599,7 +1507,6 @@ window.LABWISE_PRODUCTS = {
       "description": "GSM/CDMA/3G/4G concepts trainer with modulation experiments. 20+ ready-made experiments.",
       "spec": "Tesca — RF modules, modulation (FSK, PSK, QPSK), TDMA/CDMA experiments, channel coding, oscilloscope outputs, PC software.",
       "unit": "each",
-      "unitPrice": 39800.0,
       "imageUrl": "/images/products/lab-ele-012-mobile-comm.jpg",
       "tags": [
         "mobile-comm",
@@ -1618,7 +1525,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Satellite comms trainer — uplink/downlink at 2.4 GHz, BER measurement, modulation experiments.",
       "spec": "Tesca — uplink/downlink at 2.4 GHz, TX/RX modules, satellite link simulator, BPSK/QPSK, error correction, BER measurement, mini parabolic dish, RF amplifiers, PC interface.",
       "unit": "each",
-      "unitPrice": 78000.0,
       "imageUrl": "/images/products/lab-ele-013-satellite-comm.jpg",
       "tags": [
         "satellite-comm",
@@ -1637,7 +1543,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Analog 20 MHz dual-trace CRO with 6″ CRT — for teaching analogue oscilloscope fundamentals.",
       "spec": "20 MHz dual-trace — 6″ CRT, 2 channels, 5 mV/div – 5 V/div, dual time base, X-Y mode, hold-off. Includes 2 × 1:1/10:1 probes. AC 220V.",
       "unit": "each",
-      "unitPrice": 5880.0,
       "imageUrl": "/images/products/lab-ele-014-cro-analog.jpg",
       "tags": [
         "cro",
@@ -1655,7 +1560,6 @@ window.LABWISE_PRODUCTS = {
       "description": "Bertin AlphaE Ultra-Small Radon Monitor — measurement range 20 Bq/m³ to 10 MBq/m³. Compact pocket-size, USB rechargeable, 6-month battery. For occupational radon monitoring.",
       "spec": "Range 20 Bq/m³ to 10 MBq/m³, simultaneous T/H/P recording, 6-month battery, USB rechargeable, 111×78×36 mm, 213 g. Includes user manual, calibration certificate, 12-month warranty.",
       "unit": "each",
-      "unitPrice": 115000.0,
       "imageUrl": "/images/products/lab-spe-001-bertin-alphae.jpg",
       "tags": [
         "radon-monitor",
