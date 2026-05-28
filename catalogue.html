@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse the full Labwise product catalogue — laboratory equipment, glassware, chemicals, indicators, physics, consumables, electronics and specialised instruments. Build a quote and we'll come back within one business day.">
+    <meta name="keywords" content="laboratory catalogue Namibia, lab products Namibia, lab equipment prices, school chemistry equipment, microscope Namibia, lab pricelist">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0a2540">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.labwise-namibia.com/catalogue.html">
+    <meta property="og:title" content="Labwise Catalogue — Laboratory & Science Products, Namibia">
+    <meta property="og:description" content="Browse our full product catalogue, build a multi-item quote in one click.">
+    <meta property="og:site_name" content="Labwise Trading cc">
+
+    <link rel="canonical" href="https://www.labwise-namibia.com/catalogue.html">
+
+    <title>Catalogue — Labwise Trading cc</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
+</head>
+<body class="page-catalogue">
+
+    <!-- Utility bar -->
+    <div class="utility-bar">
+        <div class="container utility-inner">
+            <div class="utility-left">
+                <span class="util-item"><span class="util-dot"></span>Namibian-registered MSME · Delivery to all 14 regions</span>
+            </div>
+            <div class="utility-right">
+                <a href="tel:+264814401522" class="util-item">+264 81 440 1522</a>
+                <span class="util-divider"></span>
+                <a href="mailto:labwisetradingcc@gmail.com" class="util-item">labwisetradingcc@gmail.com</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nav -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo" aria-label="Labwise — Home">
+                <span class="logo-lab">Lab</span><span class="logo-wise">wise</span>
+                <svg class="logo-curve" viewBox="0 0 90 8" aria-hidden="true">
+                    <path d="M2 6 Q 45 -2 88 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+            </a>
+
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="catalogue.html" class="nav-link active">Catalogue</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="industries.html" class="nav-link">Industries</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="contact.html#quote" class="btn-primary-nav">Request a quote →</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Catalogue header -->
+    <header class="cat-header">
+        <div class="container cat-header-grid">
+            <div class="cat-header-copy">
+                <span class="eyebrow">Product catalogue</span>
+                <h1 class="cat-header-title">The full Labwise <em>catalogue.</em></h1>
+                <p class="cat-header-lede">
+                    Every line item we currently price — from a 5 ml syringe to a 200 MHz oscilloscope. Search, filter, add to a quote and send. We come back within one business day.
+                </p>
+                <ul class="cat-header-meta">
+                    <li><strong id="totalCount">—</strong> products listed</li>
+                    <li><strong id="catCount">—</strong> categories</li>
+                    <li><strong>NAD</strong> prices · ex. VAT</li>
+                </ul>
+            </div>
+
+            <div class="cat-header-search">
+                <label for="searchInput" class="cat-search-label">Search the catalogue</label>
+                <div class="cat-search-wrap">
+                    <svg class="cat-search-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <path d="M21 21l-5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <input type="search" id="searchInput" placeholder="Try “beaker”, “microscope”, “0.1 mol” …" autocomplete="off">
+                    <button type="button" class="cat-search-clear" id="searchClear" aria-label="Clear search" hidden>×</button>
+                </div>
+                <p class="cat-search-hint">Searches names, descriptions, specs and tags.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Filter / sort bar (sticky) -->
+    <section class="cat-toolbar">
+        <div class="container cat-toolbar-inner">
+            <div class="cat-chips" id="categoryChips" role="tablist" aria-label="Filter by category">
+                <!-- chips injected by JS -->
+            </div>
+
+            <div class="cat-toolbar-right">
+                <label class="cat-sort-label" for="sortSelect">Sort</label>
+                <div class="cat-sort-wrap">
+                    <select id="sortSelect" class="cat-sort">
+                        <option value="name-asc">Name A → Z</option>
+                        <option value="name-desc">Name Z → A</option>
+                        <option value="price-asc">Price: low → high</option>
+                        <option value="price-desc">Price: high → low</option>
+                        <option value="category">Category</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product grid -->
+    <main class="cat-main">
+        <div class="container">
+            <div class="cat-result-meta" id="resultMeta" aria-live="polite"></div>
+            <div class="cat-grid-products" id="productGrid">
+                <!-- skeleton while loading -->
+                <div class="cat-loading">Loading the catalogue…</div>
+            </div>
+            <div class="cat-empty" id="emptyState" hidden>
+                <h3>No products match that.</h3>
+                <p>Try a different search term, or clear the filter to see everything.</p>
+                <button class="btn-ghost" id="clearFilters">Clear filters</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Catalogue CTA -->
+    <section class="cat-cta">
+        <div class="container">
+            <div class="cat-cta-card">
+                <div>
+                    <h3>Can't find what you need?</h3>
+                    <p>If an item isn't in the catalogue, we'll still source it. Send us the requirement and we'll come back with availability and pricing.</p>
+                </div>
+                <a href="contact.html#quote" class="btn-primary">Send a custom request →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo logo--footer" aria-label="Labwise — Home">
+                        <span class="logo-lab">Lab</span><span class="logo-wise">wise</span>
+                        <svg class="logo-curve" viewBox="0 0 90 8" aria-hidden="true">
+                            <path d="M2 6 Q 45 -2 88 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                    <p class="footer-tag">Driven by your needs. Supplied by Labwise.</p>
+                    <p class="footer-desc">Namibian-registered supplier of laboratory equipment, glassware, chemicals, STEAM kits, balances and protective equipment. Delivering to schools, universities, clinics and research institutions in all 14 regions.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h5>Browse</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="catalogue.html">Catalogue</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="contact.html#quote">Request a quote</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h5>Categories</h5>
+                    <ul id="footerCategories">
+                        <!-- injected -->
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><a href="tel:+264814401522">+264 81 440 1522</a></li>
+                        <li><a href="mailto:labwisetradingcc@gmail.com">labwisetradingcc@gmail.com</a></li>
+                        <li>Namibia · all 14 regions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>© <span id="footerYear">2026</span> Labwise Trading cc. All rights reserved. Registered close corporation, Namibia.</div>
+                <div class="footer-meta">Regulatory IDs available on quotations and invoices.</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quote drawer (floating cart) -->
+    <button class="quote-fab" id="quoteFab" aria-expanded="false" aria-controls="quoteDrawer" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h2l2 12h12l2-9H7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="quote-fab-label">Quote</span>
+        <span class="quote-fab-count" id="quoteFabCount">0</span>
+    </button>
+
+    <aside class="quote-drawer" id="quoteDrawer" aria-hidden="true" aria-label="Your quote builder">
+        <div class="quote-drawer-head">
+            <div>
+                <h3>Your quote</h3>
+                <p class="quote-drawer-sub" id="quoteSubcount">0 items</p>
+            </div>
+            <button class="quote-drawer-close" id="quoteDrawerClose" aria-label="Close quote builder">×</button>
+        </div>
+
+        <div class="quote-drawer-body" id="quoteDrawerBody">
+            <div class="quote-empty">
+                <p>Your quote is empty.</p>
+                <p class="quote-empty-hint">Add items from the catalogue and we'll bundle them into a single quote request.</p>
+            </div>
+        </div>
+
+        <div class="quote-drawer-foot">
+            <div class="quote-totals">
+                <div class="quote-total-row">
+                    <span>Items</span>
+                    <strong id="quoteTotalItems">0</strong>
+                </div>
+                <div class="quote-total-row quote-total-row--money">
+                    <span>Indicative total</span>
+                    <strong id="quoteTotalMoney">N$ 0.00</strong>
+                </div>
+                <p class="quote-total-note">Indicative — final pricing confirmed in your quote (ex. VAT, ex. delivery).</p>
+            </div>
+
+            <button class="btn-primary btn-full" id="quoteSend">Send quote request →</button>
+            <button class="btn-ghost btn-full" id="quoteClear">Clear quote</button>
+        </div>
+    </aside>
+
+    <div class="quote-drawer-backdrop" id="quoteDrawerBackdrop" hidden></div>
+
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 14l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+
+    <script src="data/products.js"></script>
+    <script src="script.js"></script>
+    <script src="catalogue.js"></script>
+</body>
+</html>

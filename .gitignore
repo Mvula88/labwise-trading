@@ -32,3 +32,13 @@ yarn-error.log*
 # node_modules/
 # package-lock.json
 # yarn.lock
+
+# Internal business documents (pricing sheets, tender drafts, etc.)
+# These contain commercial information and should not be committed to a public repo.
+*.xlsx
+*.xls
+*.docx
+*.doc
+
+# Stray/cached image files (delete from disk if not needed)
+H3969039e7dca45d39854cd5e2b66f7b67.avif
