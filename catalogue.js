@@ -455,7 +455,7 @@ Phone: [please fill in]
 — Built from labwise-namibia.com/catalogue.html`;
 
         const subject = `Quote request — ${totalCount} item${totalCount === 1 ? '' : 's'} from catalogue`;
-        const mailto = `mailto:labwisetradingcc@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        const mailto = `mailto:sales@labwise-namibia.com?cc=labwisetradingcc@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         window.location.href = mailto;
     });
 

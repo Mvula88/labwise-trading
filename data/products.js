@@ -9,7 +9,8 @@ window.LABWISE_PRODUCTS = {
     "name": "Labwise Trading CC",
     "tagline": "Your Partner in Laboratory & Educational Equipment",
     "website": "www.labwise-namibia.com",
-    "email": "labwisetradingcc@gmail.com",
+    "email": "sales@labwise-namibia.com",
+    "emailSecondary": "labwisetradingcc@gmail.com",
     "phone": "+264 81 440 1522",
     "vatRegistered": false,
     "country": "Namibia"

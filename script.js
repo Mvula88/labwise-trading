@@ -95,7 +95,7 @@
        Quote forms — open mailto with prefilled body
        -------------------------------------------------------------------- */
     const buildMailto = (subject, body) =>
-        `mailto:labwisetradingcc@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        `mailto:sales@labwise-namibia.com?cc=labwisetradingcc@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
     const showMessage = (form, text, kind = 'success') => {
         const existing = form.querySelector('.form-message');

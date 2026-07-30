@@ -4,7 +4,7 @@ Professional website for Labwise Trading cc, a trusted supplier of laboratory an
 
 ## About
 
-Labwise Trading cc is a Namibia-based supplier of laboratory equipment, scientific instruments, medical supplies, and STEAM & robotics solutions, serving schools, universities, laboratories, clinics, and research institutions nationwide.
+Labwise Trading cc is a Namibia-based supplier of laboratory equipment, scientific instruments, medical supplies, and STEAM & robotics solutions, serving schools and regional education directorates, universities, mining process and environmental laboratories, commercial analytical laboratories, clinics, and research institutions nationwide.
 
 ## Website Features
 
@@ -204,7 +204,7 @@ Current optimizations:
 **Labwise Trading cc**
 - 📍 Location: Ongwediva, Namibia
 - 📞 Phone/WhatsApp: +264 81 440 1522
-- 📧 Email: labwisetradingcc@gmail.com
+- 📧 Email: sales@labwise-namibia.com (primary) / labwisetradingcc@gmail.com
 - 🌐 Website: www.labwise-trading.com
 
 ## Future Enhancements
@@ -226,7 +226,7 @@ Potential features to add:
 
 For technical issues or questions about the website:
 - Create an issue in the repository
-- Contact: labwisetradingcc@gmail.com
+- Contact: sales@labwise-namibia.com
 
 ## License
 
